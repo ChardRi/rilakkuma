@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {background:#cfa149;}
+.left {float:left;}
+.right {float:right;}
+
+#main {width:248px;margin:120px auto 0 auto;}
+#draw {width:248px;height:315px;position:relative}
+
+#head_out {z-index:100;left:29px;top:20px;height:136px;overflow:hidden;position:absolute;}
+#head {position:relative;height:142px;width:184px;border-radius:82px/71px; border:3px solid #000;background:#cfa149;}
+#eye_left {position:absolute;left:38px;top:71px;width:20px;height:20px;border-radius:10px;background:#000;}
+#eye_right {position:absolute;right:38px;top:71px;width:20px;height:20px;border-radius:10px;background:#000;}
+
+#mouth {position:absolute;left:66px;top:75px;width:52px;height:41px;border-radius:25px/21px;background:#fff;}
+#mouth .top{width:14px;height:14px;border-radius:7px;background:#000;top:11px;left:19px;position:absolute;}
+#mouth .left{position:absolute;width:4px;height:12px;-ms-transform:rotate(30deg);-moz-transform:rotate(30deg);-o-transform:rotate(30deg);-webkit-transform:rotate(30deg);background:#000;top:23px;left:18px;}
+#mouth .right{position:absolute;width:4px;height:12px;-ms-transform:rotate(-30deg);-moz-transform:rotate(-30deg);-o-transform:rotate(-30deg);-webkit-transform:rotate(-30deg);background:#000;top:23px;right:18px;}
+
+#ear_left{z-index:1;position:absolute;}
+#ear_left .ear1{width:35px;height:33px;border-radius:40px 0px 0px/33px 0px 0px;border-top:3px solid #000;border-left:3px solid #000;position:absolute;background:#cfa149;}
+#ear_left .ear2{width:35px;height:28px;border-radius:0px 40px 0px 0px/0px 33px 0px 0px;border-top:3px solid #000;border-right:3px solid #000;position:absolute;left:35px;background:#cfa149;}
+#ear_left .ear3{width:40px;height:32px;border-radius:30px 40px 0 50px/20px 40px 0 40px;position:absolute;background:#ffeb8c;border:3px solid #000;top:24px;}
+#ear_left .ear4{position:absolute;width:0;height:0;border-top:16px solid transparent;border-left:6px solid #b27824;border-bottom:4px solid transparent;left:66px;top:16px;}
+#ear_left .ear5{width:35px;height:33px;position:absolute;background:#ffeb8c;top:24px;left:35px;top:24px;background:#cfa149;z-index:-1000;}
+
+#ear_right{z-index:1;position:absolute;-webkit-transform:rotateY(180deg);transform: rotateY(180deg);-moz-transform: skew(0deg, 180deg) scale(-1, 1);-o-transform: skew(0deg, 180deg) scale(-1, 1);right:0px;}
+#ear_right .ear1{width:35px;height:33px;border-radius:40px 0px 0px/33px 0px 0px;border-top:3px solid #000;border-left:3px solid #000;position:absolute;background:#cfa149;}
+#ear_right .ear2{width:35px;height:28px;border-radius:0px 40px 0px 0px/0px 33px 0px 0px;border-top:3px solid #000;border-right:3px solid #000;position:absolute;left:35px;background:#cfa149;}
+#ear_right .ear3{width:40px;height:32px;border-radius:30px 40px 0 50px/20px 40px 0 40px;position:absolute;background:#ffeb8c;border:3px solid #000;top:24px;}
+#ear_right .ear4{position:absolute;width:0;height:0;border-top:16px solid transparent;border-left:6px solid #b27824;border-bottom:4px solid transparent;left:66px;top:16px;}
+#ear_right .ear5{width:35px;height:33px;position:absolute;background:#ffeb8c;top:24px;left:35px;top:24px;background:#cfa149;z-index:-1000;}
+
+#chin {z-index:101;position:absolute;background:#b27824;width:100px;height:13px;border-radius:0 0 50px 50px/0 0 15px 15px;top:153px;left:74px;}
+#chin .in {background:#cfa149;width:50px;height:8px;border-radius:0 0 25px 25px/0 0 3px 3px;}
+
+#belly {position:absolute;background:#fff;width:80px;height:90px;border-radius:40px/50px;top:177px;left:84px;}
+
+#body_back{position:absolute;background:#cfa149;width:90px;height:165px;top:120px;left:80px;}
+
+#body_left{}
+#body_left .hand1{position:absolute;height:80px;width:30px;border-left:3px solid #000;border-radius:30px 0 0 0/90px 0 0 0;top:150px;left:45px;-ms-transform:rotate(10deg);-moz-transform:rotate(10deg);-o-transform:rotate(10deg);-webkit-transform:rotate(10deg);background:#cfa149;}
+#body_left .hand2{position:absolute;height:15px;width:30px;border-bottom:3px solid #000;border-radius:0 0 15px 15px/0 0 15px 15px;-ms-transform:rotate(10deg);-moz-transform:rotate(10deg);-o-transform:rotate(10deg);-webkit-transform:rotate(10deg);top:220px;left:35px;background:#cfa149;z-index:-500;}
+#body_left .foot1{position:absolute;height:110px;width:20px;border-left:3px solid #000;border-radius:20px 0 0 0/100px 0 0 0;top:175px;left:58px;background:#cfa149;}
+#body_left .foot2{position:absolute;height:20px;width:35px;border-left:3px solid #000;border-bottom:3px solid #000;border-right:3px solid #000;border-radius:0 0 12px 22px/0 0 16px 16px;top:285px;left:58px;background:#cfa149;}
+
+#body_right{position:absolute;-webkit-transform:rotateY(180deg);transform: rotateY(180deg);-moz-transform: skew(0deg, 180deg) scale(-1, 1);-o-transform: skew(0deg, 180deg) scale(-1, 1);right:0px;}
+#body_right .hand1{position:absolute;height:80px;width:30px;border-left:3px solid #000;border-radius:30px 0 0 0/90px 0 0 0;top:150px;left:45px;-ms-transform:rotate(10deg);-moz-transform:rotate(10deg);-o-transform:rotate(10deg);-webkit-transform:rotate(10deg);background:#cfa149;}
+#body_right .hand2{position:absolute;height:15px;width:30px;border-bottom:3px solid #000;border-radius:0 0 15px 15px/0 0 15px 15px;-ms-transform:rotate(10deg);-moz-transform:rotate(10deg);-o-transform:rotate(10deg);-webkit-transform:rotate(10deg);top:220px;left:35px;background:#cfa149;z-index:-500;}
+#body_right .foot1{position:absolute;height:110px;width:20px;border-left:3px solid #000;border-radius:20px 0 0 0/100px 0 0 0;top:175px;left:58px;background:#cfa149;}
+#body_right .foot2{position:absolute;height:20px;width:35px;border-left:3px solid #000;border-bottom:3px solid #000;border-right:3px solid #000;border-radius:0 0 12px 22px/0 0 16px 16px;top:285px;left:58px;background:#cfa149;}
+
+#ass {position:absolute;width:56px;height:3px;border-bottom:3px solid #000;border-radius:0 0 29px 29px/0 0 6px 6px;top:283px;left:95px;background:#cfa149;}
+
+#shadow {background:#c4903a;position:absolute;width:150px;height:20px;border-radius:75px/10px;z-index:-1;top:295px;left:48px;}
+
+#info {padding: 10px; font-family:"Microsoft Yahei"; font-size: 13px; text-align: center; color: #fff; text-shadow: 2px 2px 2px #b27824;}
+#info p{margin:0px;}
+#info p a{text-decoration:none;color:#09f;text-shadow:1px 1px 1px #fff;font-family:'Century Gothic';}
